@@ -1,0 +1,12 @@
+.env
+.env.*
+!.env.example
+node_modules/
+auth_info_baileys/
+auth_info/
+sessions/
+store/
+data/private/
+*.log
+npm-debug.log*
+.DS_Store
