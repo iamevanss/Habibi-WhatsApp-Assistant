@@ -1,0 +1,1 @@
+const browser=require('../src/features/browser');(async()=>{const url=process.argv[2]||'https://www.bing.com';const r=await browser.browse(url,{screenshot:false});console.log(JSON.stringify({ok:r.ok,url:r.url,title:r.title,text:r.text.slice(0,2000),links:r.links.slice(0,10)},null,2))})().catch(e=>{console.error(e);process.exit(1)});
