@@ -1,0 +1,6 @@
+{
+  "servers": {
+    "filesystem": {"command":"npx","args":["-y","@modelcontextprotocol/server-filesystem","/tmp"],"description":"Example MCP filesystem server"},
+    "fetch": {"command":"npx","args":["-y","@modelcontextprotocol/server-fetch"],"description":"Example HTTP fetch MCP server"}
+  }
+}
