@@ -1,0 +1,4 @@
+'use strict';
+const http = require('http');
+function createLocalServer(handler, options = {}) { const host = options.host || '127.0.0.1'; if (!['127.0.0.1', 'localhost', '::1'].includes(host)) throw new Error('Local server must bind to loopback'); const server = http.createServer((req, res) => { Promise.resolve().then(() => handler(req, res)).catch(() => { if (!res.headersSent) res.writeHead(500, { 'content-type': 'text/plain; charset=utf-8' }); res.end('Internal server error'); }); }); return { server, listen(port = 0) { return new Promise((resolve, reject) => { server.once('error', reject); server.listen(port, host, () => { server.removeListener('error', reject); resolve(server.address()); }); }); }, close() { return new Promise((resolve, reject) => server.close(err => err ? reject(err) : resolve())); } }; }
+module.exports = { createLocalServer };
