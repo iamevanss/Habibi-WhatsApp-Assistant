@@ -1,0 +1,36 @@
+{
+  "name": "habibi-whatsapp-assistant",
+  "version": "1.2.1",
+  "description": "Habibi WhatsApp Assistant - conversational WhatsApp agent with group administration, moderation, utilities, games, integrations and group-status tools.",
+  "main": "src/index.js",
+  "type": "commonjs",
+  "scripts": {
+    "start": "node supervisor.js",
+    "check": "node scripts/doctor.js --syntax",
+    "doctor": "node scripts/doctor.js",
+    "health": "node -e \"require('./src/features/selfheal').healthCheck().then(x=>{console.log(JSON.stringify(x,null,2));process.exit(x.ok?0:1)})\"",
+    "start-direct": "node src/index.js",
+    "install-browser": "npx puppeteer browsers install chrome",
+    "browser-test": "node scripts/browser-test.js",
+    "fix-ffmpeg": "node -e \"const f=require('ffmpeg-static');const fs=require('fs');console.log(f&&fs.existsSync(f)?('ffmpeg-static OK: '+f):'MISSING — run: npm i ffmpeg-static && sudo apt-get install -y ffmpeg')\""
+  },
+  "engines": { "node": ">=20.9.0" },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.11.0",
+    "libsignal": "6.0.0",
+    "adm-zip": "0.6.0",
+    "@napi-rs/canvas": "1.0.3",
+    "axios": "1.7.9",
+    "dotenv": "17.4.2",
+    "form-data": "4.0.1",
+    "mathjs": "15.2.0",
+    "msedge-tts": "2.0.7",
+    "pino": "10.3.1",
+    "qrcode-terminal": "0.12.0",
+    "sharp": "0.35.3",
+    "ffmpeg-static": "5.2.0",
+    "@whiskeysockets/baileys": "7.0.0-rc11"
+  },
+  "overrides": { "libsignal": "6.0.0", "@whiskeysockets/baileys": { "libsignal": "6.0.0" } },
+  "optionalDependencies": { "localtunnel": "2.0.2", "puppeteer": "25.3.0", "youtube-dl-exec": "3.1.9" }
+}
