@@ -52,4 +52,4 @@ The dependency is pinned to `@whiskeysockets/baileys` `7.0.0-rc11`, as requested
 
 ## License and attribution
 
-Habibi is the rebranded WhatsApp Agent project maintained by Stain, with group-status posting and broadcasting adapted from Stain's separate Stain × Habibi project. Respect the upstream licenses of inherited code and dependencies.
+Habibi is the rebranded WhatsApp Agent project maintained by Stain. Respect the upstream licenses of inherited code and dependencies.
