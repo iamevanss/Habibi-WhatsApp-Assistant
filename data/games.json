@@ -2,59 +2,365 @@
   "test-chat": {
     "type": "wordsearch",
     "grid": [
-      ["g", "r", "o", "r", "r", "i", "m", "m"],
-      ["o", "r", "b", "i", "t", "c", "e", "m"],
-      ["f", "i", "i", "l", "n", "i", "m", "a"],
-      ["v", "v", "k", "b", "a", "s", "h", "n"],
-      ["l", "e", "m", "o", "n", "u", "a", "g"],
-      ["h", "r", "q", "z", "h", "m", "p", "o"],
-      ["y", "r", "o", "v", "i", "d", "p", "v"],
-      ["k", "b", "r", "e", "a", "d", "y", "v"]
+      [
+        "g",
+        "r",
+        "o",
+        "r",
+        "r",
+        "i",
+        "m",
+        "m"
+      ],
+      [
+        "o",
+        "r",
+        "b",
+        "i",
+        "t",
+        "c",
+        "e",
+        "m"
+      ],
+      [
+        "f",
+        "i",
+        "i",
+        "l",
+        "n",
+        "i",
+        "m",
+        "a"
+      ],
+      [
+        "v",
+        "v",
+        "k",
+        "b",
+        "a",
+        "s",
+        "h",
+        "n"
+      ],
+      [
+        "l",
+        "e",
+        "m",
+        "o",
+        "n",
+        "u",
+        "a",
+        "g"
+      ],
+      [
+        "h",
+        "r",
+        "q",
+        "z",
+        "h",
+        "m",
+        "p",
+        "o"
+      ],
+      [
+        "y",
+        "r",
+        "o",
+        "v",
+        "i",
+        "d",
+        "p",
+        "v"
+      ],
+      [
+        "k",
+        "b",
+        "r",
+        "e",
+        "a",
+        "d",
+        "y",
+        "v"
+      ]
     ],
-    "words": ["music", "ivory", "river", "lemon", "happy", "orbit", "mango", "mirror", "bread"],
+    "words": [
+      "music",
+      "ivory",
+      "river",
+      "lemon",
+      "happy",
+      "orbit",
+      "mango",
+      "mirror",
+      "bread"
+    ],
     "placed": [
-      {"word":"music","row":5,"col":5,"dr":-1,"dc":0,"len":5},
-      {"word":"ivory","row":6,"col":4,"dr":0,"dc":-1,"len":5},
-      {"word":"river","row":1,"col":1,"dr":1,"dc":0,"len":5},
-      {"word":"lemon","row":4,"col":0,"dr":0,"dc":1,"len":5},
-      {"word":"happy","row":3,"col":6,"dr":1,"dc":0,"len":5},
-      {"word":"orbit","row":1,"col":0,"dr":0,"dc":1,"len":5},
-      {"word":"mango","row":1,"col":7,"dr":1,"dc":0,"len":5},
-      {"word":"mirror","row":0,"col":6,"dr":0,"dc":-1,"len":6},
-      {"word":"bread","row":7,"col":1,"dr":0,"dc":1,"len":5}
+      {
+        "word": "music",
+        "row": 5,
+        "col": 5,
+        "dr": -1,
+        "dc": 0,
+        "len": 5
+      },
+      {
+        "word": "ivory",
+        "row": 6,
+        "col": 4,
+        "dr": 0,
+        "dc": -1,
+        "len": 5
+      },
+      {
+        "word": "river",
+        "row": 1,
+        "col": 1,
+        "dr": 1,
+        "dc": 0,
+        "len": 5
+      },
+      {
+        "word": "lemon",
+        "row": 4,
+        "col": 0,
+        "dr": 0,
+        "dc": 1,
+        "len": 5
+      },
+      {
+        "word": "happy",
+        "row": 3,
+        "col": 6,
+        "dr": 1,
+        "dc": 0,
+        "len": 5
+      },
+      {
+        "word": "orbit",
+        "row": 1,
+        "col": 0,
+        "dr": 0,
+        "dc": 1,
+        "len": 5
+      },
+      {
+        "word": "mango",
+        "row": 1,
+        "col": 7,
+        "dr": 1,
+        "dc": 0,
+        "len": 5
+      },
+      {
+        "word": "mirror",
+        "row": 0,
+        "col": 6,
+        "dr": 0,
+        "dc": -1,
+        "len": 6
+      },
+      {
+        "word": "bread",
+        "row": 7,
+        "col": 1,
+        "dr": 0,
+        "dc": 1,
+        "len": 5
+      }
     ],
-    "found": ["music"],
-    "foundBy": {"music":"234111@s.whatsapp.net"},
+    "found": [
+      "music"
+    ],
+    "foundBy": {
+      "music": "234111@s.whatsapp.net"
+    },
     "host": "234111",
     "started": 1788852300433
   },
   "test-chat3": {
     "type": "wordsearch",
     "grid": [
-      ["a", "m", "n", "e", "e", "u", "q", "l"],
-      ["r", "e", "w", "l", "a", "y", "o", "l"],
-      ["o", "l", "h", "s", "a", "s", "o", "e"],
-      ["r", "o", "b", "w", "n", "s", "w", "c"],
-      ["r", "n", "r", "o", "g", "e", "h", "e"],
-      ["i", "w", "e", "r", "e", "h", "i", "d"],
-      ["m", "t", "a", "d", "l", "c", "t", "i"],
-      ["u", "w", "d", "x", "b", "q", "e", "t"]
+      [
+        "a",
+        "m",
+        "n",
+        "e",
+        "e",
+        "u",
+        "q",
+        "l"
+      ],
+      [
+        "r",
+        "e",
+        "w",
+        "l",
+        "a",
+        "y",
+        "o",
+        "l"
+      ],
+      [
+        "o",
+        "l",
+        "h",
+        "s",
+        "a",
+        "s",
+        "o",
+        "e"
+      ],
+      [
+        "r",
+        "o",
+        "b",
+        "w",
+        "n",
+        "s",
+        "w",
+        "c"
+      ],
+      [
+        "r",
+        "n",
+        "r",
+        "o",
+        "g",
+        "e",
+        "h",
+        "e"
+      ],
+      [
+        "i",
+        "w",
+        "e",
+        "r",
+        "e",
+        "h",
+        "i",
+        "d"
+      ],
+      [
+        "m",
+        "t",
+        "a",
+        "d",
+        "l",
+        "c",
+        "t",
+        "i"
+      ],
+      [
+        "u",
+        "w",
+        "d",
+        "x",
+        "b",
+        "q",
+        "e",
+        "t"
+      ]
     ],
-    "words": ["chess", "queen", "tide", "melon", "loyal", "mirror", "bread", "white", "sword", "angel"],
+    "words": [
+      "chess",
+      "queen",
+      "tide",
+      "melon",
+      "loyal",
+      "mirror",
+      "bread",
+      "white",
+      "sword",
+      "angel"
+    ],
     "placed": [
-      {"word":"chess","row":6,"col":5,"dr":-1,"dc":0,"len":5},
-      {"word":"queen","row":0,"col":6,"dr":0,"dc":-1,"len":5},
-      {"word":"tide","row":7,"col":7,"dr":-1,"dc":0,"len":4},
-      {"word":"melon","row":0,"col":1,"dr":1,"dc":0,"len":5},
-      {"word":"loyal","row":1,"col":7,"dr":0,"dc":-1,"len":5},
-      {"word":"mirror","row":6,"col":0,"dr":-1,"dc":0,"len":6},
-      {"word":"bread","row":3,"col":2,"dr":1,"dc":0,"len":5},
-      {"word":"white","row":3,"col":6,"dr":1,"dc":0,"len":5},
-      {"word":"sword","row":2,"col":3,"dr":1,"dc":0,"len":5},
-      {"word":"angel","row":2,"col":4,"dr":1,"dc":0,"len":5}
+      {
+        "word": "chess",
+        "row": 6,
+        "col": 5,
+        "dr": -1,
+        "dc": 0,
+        "len": 5
+      },
+      {
+        "word": "queen",
+        "row": 0,
+        "col": 6,
+        "dr": 0,
+        "dc": -1,
+        "len": 5
+      },
+      {
+        "word": "tide",
+        "row": 7,
+        "col": 7,
+        "dr": -1,
+        "dc": 0,
+        "len": 4
+      },
+      {
+        "word": "melon",
+        "row": 0,
+        "col": 1,
+        "dr": 1,
+        "dc": 0,
+        "len": 5
+      },
+      {
+        "word": "loyal",
+        "row": 1,
+        "col": 7,
+        "dr": 0,
+        "dc": -1,
+        "len": 5
+      },
+      {
+        "word": "mirror",
+        "row": 6,
+        "col": 0,
+        "dr": -1,
+        "dc": 0,
+        "len": 6
+      },
+      {
+        "word": "bread",
+        "row": 3,
+        "col": 2,
+        "dr": 1,
+        "dc": 0,
+        "len": 5
+      },
+      {
+        "word": "white",
+        "row": 3,
+        "col": 6,
+        "dr": 1,
+        "dc": 0,
+        "len": 5
+      },
+      {
+        "word": "sword",
+        "row": 2,
+        "col": 3,
+        "dr": 1,
+        "dc": 0,
+        "len": 5
+      },
+      {
+        "word": "angel",
+        "row": 2,
+        "col": 4,
+        "dr": 1,
+        "dc": 0,
+        "len": 5
+      }
     ],
-    "found": ["chess"],
-    "foundBy": {"chess":"234111@s.whatsapp.net"},
+    "found": [
+      "chess"
+    ],
+    "foundBy": {
+      "chess": "234111@s.whatsapp.net"
+    },
     "host": "234111",
     "started": 1788852323475
   }
