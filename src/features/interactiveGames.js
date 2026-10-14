@@ -1,0 +1,5 @@
+'use strict';
+function makeTriviaQuestion() { const bank = [{ q: 'Which planet is known as the Red Planet?', options: ['Mars', 'Venus', 'Jupiter', 'Mercury'], answer: 0 }, { q: 'How many sides does a hexagon have?', options: ['Five', 'Six', 'Seven', 'Eight'], answer: 1 }, { q: 'What is H2O commonly called?', options: ['Salt', 'Oxygen', 'Water', 'Hydrogen'], answer: 2 }]; return bank[Math.floor(Math.random() * bank.length)]; }
+function checkAnswer(question, choice) { if (!question || !Array.isArray(question.options)) throw new Error('Invalid question'); const index = typeof choice === 'number' ? choice : question.options.findIndex(v => String(v).toLowerCase() === String(choice).toLowerCase()); return { correct: index === question.answer, correctAnswer: question.options[question.answer] }; }
+function wordScramble(word) { const chars = [...String(word)]; if (chars.length < 2) return chars.join(''); for (let i = chars.length - 1; i > 0; i--) { const j = Math.floor(Math.random() * (i + 1)); [chars[i], chars[j]] = [chars[j], chars[i]]; } return chars.join(''); }
+module.exports = { makeTriviaQuestion, checkAnswer, wordScramble };
